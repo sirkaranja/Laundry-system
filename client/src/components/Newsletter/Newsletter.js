@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsletterTab.css';
+import './newsletter.css';
 
 const NewsletterTab = () => {
   const handleSubscribe = () => {

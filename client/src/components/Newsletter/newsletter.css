@@ -1,0 +1,22 @@
+.newsletter-tab {
+    background-color: purple;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .newsletter-tab p {
+    color: white;
+    margin-right: 16px;
+  }
+  
+  .newsletter-tab button {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
