@@ -1,0 +1,32 @@
+.footer {
+    background-color: rgb(16, 15, 16);
+    padding-bottom: 0px;
+}
+.footer-header {
+    color: white;
+    align-self: center;
+    margin-left: 700px;
+    padding-top: 50px;
+}
+.social-links{
+    color: white;
+    align-self: center;
+    margin-left: 700px;
+}
+a{
+    color: white;
+    margin-right: 19px;
+}
+.header-links{
+    list-style: none;
+    color: azure;
+    display: flex;
+    justify-content: center;
+}
+li{
+    margin-right: 19px;
+}
+.copyright{
+    color: white;
+    margin-left: 600px;
+}
