@@ -1,0 +1,48 @@
+.services-section{
+    display: flex;
+    align-items: center;
+
+}
+.service-card {
+        width: 300px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+.icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      
+.header {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+.description {
+        font-size: 16px;
+      }
+      
+.works h2{
+    align-items: center;
+    margin-left: 600px;
+}
+ul li{
+  list-style-type: none;
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+  
+}
+ul li a{
+  text-decoration: none;
+}
+ul li:hover {
+  text-decoration: underline;
+}
+
+ul li:hover a {
+  border-bottom: 2px solid orange;
+}
