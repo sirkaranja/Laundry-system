@@ -1,9 +1,10 @@
 .newsletter-tab {
-    background-color: purple;
+    background-color: rgb(106, 26, 159);
     padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
   }
   
   .newsletter-tab p {
