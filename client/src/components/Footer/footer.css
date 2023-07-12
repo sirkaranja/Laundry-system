@@ -13,10 +13,10 @@
     align-self: center;
     margin-left: 700px;
 }
-a{
-    color: white;
+/* a{
+    color: rgb(192, 88, 88);
     margin-right: 19px;
-}
+} */
 .header-links{
     list-style: none;
     color: azure;
