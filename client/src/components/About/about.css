@@ -1,0 +1,16 @@
+.about-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image {
+width: 600px; /* adjust size as needed */
+    height: 40%; 
+    /* maintain aspect ratio */
+  }
+  
+  .about-text {
+    margin-left: 220px;
+    padding-bottom: 300px; 
+    font-size: larger;/* adjust spacing between image and text */
+  }
