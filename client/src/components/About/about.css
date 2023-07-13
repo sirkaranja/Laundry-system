@@ -4,13 +4,30 @@
   }
   
   .about-image {
-width: 600px; /* adjust size as needed */
-    height: 40%; 
-    /* maintain aspect ratio */
-  }
+    width: 800px;
+    height: 700px;
+    padding-bottom: 510px;
+    border-radius: 0 10px;
+   } 
   
   .about-text {
-    margin-left: 220px;
-    padding-bottom: 300px; 
-    font-size: larger;/* adjust spacing between image and text */
+    margin-left: 20px;
+    padding-bottom: 510px; 
+    font-size: 30px;
   }
+  #about-top{
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: large;
+  }
+  .custom-button{   display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    position: relative;
+    border: solid 2px transparent;
+    gap: 6px;
+    color: #ffffff;
+    background: #08c22e;
+    /* background: linear-gradient(white, white) padding-box, linear-gradient(to right, #08c22e, #03a9f4) border-box; */
+    border-radius: 10px;}
