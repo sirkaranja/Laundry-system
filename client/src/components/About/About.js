@@ -18,9 +18,10 @@ export const About = () => {
              eu fugiat nulla pariatur.</p><br />
 
         <button className='custom-button'>Learn More</button>
-      </div>
-      
+      </div>  
     </div>
+    
+    
   )
 }
 
