@@ -1,8 +1,9 @@
 import React, { useState }  from 'react'
 
 import "../services/services.css"
-import img2 from "../../assets/about_1.jpg"
+
 import img3 from "../../assets/passionate.jpg"
+import "../About/about.css"
 
 export const Services = () => {
     const handleSubscribe = () => {
@@ -15,52 +16,9 @@ export const Services = () => {
     
   };
     return (
-        <><h1>Our Laundry Services</h1>
-        <div className='services-section'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt<br /> ut labore et dolore magna aliqua. Imperdiet proin fermentum leo vel orci
-                porta non pulvinar neque. Nunc id cursus metus aliquam eleifend. Nibh nisl condimentum
-                id venenatis. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing.
-                Ultrices vitae auctor eu augue ut.</p>
-            <img src="" alt='' className='.about-image' />
-            <div className="service-card">
-                <div className="icon">
-                    <i className="fas fa-code"></i>
-                </div>
-                <h3 className="header">Dry clothes</h3>
-                <p className="description">
-                    We offer professional web development services using the latest
-                    technologies and best practices.
-                </p>
-            </div>
-            <div className="service-card">
-                <div className="icon">
-                    <i className="fas fa-code"></i>
-                </div>
-                <h3 className="header">gentle Detergent</h3>
-                <p className="description">
-                    We offer professional web development services using the latest
-                    technologies and best practices.
-                </p>
-            </div>
-            <div className="service-card">
-                <div className="icon">
-                    <i className="fas fa-code"></i>
-                </div>
-                <h3 className="header">gentle detergent</h3>
-                <p className="description">
-                    We offer professional web development services using the latest
-                    technologies and best practices.
-                </p>
-            </div>
-
-
-
-        </div>
-            <div>
-                <img src='' alt='' className='' />
-
-            </div>
+        // <h1 id='service-sec'>Our Laundry Services</h1>
+        <>  
+         
             <div className='works'>
                 <h2>How It Works<br />
                     Our Services</h2>
@@ -84,7 +42,7 @@ export const Services = () => {
       </div>
       <p>{displayedInfo}</p>
     </div>
-   
+    
         </>
 
 
