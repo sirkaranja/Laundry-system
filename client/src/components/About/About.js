@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../../assets/about_1.jpg';
-import passionate from '../../assets/passionate.jpg'; // Import your service image here
+import { MdLocalLaundryService } from 'react-icons/md';
+import passionate from '../../assets/passionate.jpg';
 import "../About/about.css";
 
 const About = () => {
@@ -31,16 +32,19 @@ const About = () => {
         <img src={passionate} alt="Service" className="service-image" /> 
         <div className="services-cards">
           <div className="service-card">
+          < MdLocalLaundryService size={24}/>  
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
           <div className="service-card">
+          < MdLocalLaundryService size={24}/> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
           <div className="service-card">
+          < MdLocalLaundryService size={24}/> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
