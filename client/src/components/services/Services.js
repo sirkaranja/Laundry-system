@@ -31,7 +31,7 @@ export const Services = () => {
       <div>
       <img src={img6} alt="Your Image"  style={{width:'1200px', height:'600px', paddingLeft:'150px',}}/>
       </div>
-      <div>
+      <div className='links-section'>
         <img src={img3} alt="Your Image" />
         <h2>We're Passionate Laundry</h2>
         <ul>

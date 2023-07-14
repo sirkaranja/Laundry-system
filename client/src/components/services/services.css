@@ -44,3 +44,6 @@ ul li:hover a {
 #servi-p{
 text-align: center;
 }
+.links-section{
+  display: flex;
+}
