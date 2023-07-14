@@ -1,9 +1,11 @@
 import React from 'react';
 import img from '../../assets/about_1.jpg';
+import img1 from '../../assets/dry cleaning.jpg';
+import img3 from '../../assets/machine.jpg'
 import { MdLocalLaundryService } from 'react-icons/md';
 import {GiClothesline} from 'react-icons/gi'
-import {MdOutlineDryCleaning} from 'react-icons/md'
-import passionate from '../../assets/passionate.jpg';
+import {TbTruckDelivery} from 'react-icons/tb'
+
 import "../About/about.css";
 
 const About = () => {
@@ -25,33 +27,39 @@ const About = () => {
           <button className='custom-button'>Learn More</button>
         </div>
       </div>
-      <div>
-        <h2>Our Laundry <br/>Services</h2>
+      <div className='main-serv'>
+        <h2 className='serv-title'>Our Laundry Services</h2>
+        <p>When choosing a laundry service, consider factors such as pricing, turnaround time,<br/>
+         quality of service, location convenience, and any additional services they offer. <br/>
+         </p>
       </div>
         
       <div className="services-section">
         
-        <img src={passionate} alt="Service" className="service-image" /> 
+        <img src={img1} alt="Service" className="service-image" /> 
         <div className="services-cards">
           <div className="service-card">
-         <h3 className='card-titl'>< GiClothesline size={17}/> Gentle Detergent  </h3> 
+         <h3 className='card-titl'>< GiClothesline size={17}/> Dry Cleaning Services </h3> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
           <div className="service-card">
-          <h3  className='card-titl'><MdOutlineDryCleaning size={17}/>Fast Dryer </h3>
+          <h3  className='card-titl'><MdLocalLaundryService size={17}/>Fast Dryer </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
           <div className="service-card">
-         <h3 className='card-titl'>< MdLocalLaundryService size={17}/> Dry clothes </h3> 
+         <h3 className='card-titl'>< TbTruckDelivery  size={20}/>Laundry Pickup and Delivery Services </h3> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
         </div>
+      </div>
+      <div>
+        <img src={img3} alt='machine'  className='after-service'/>
       </div>
     </>
   );
