@@ -16,23 +16,26 @@ function Footer() {
                 <div class="single_footer">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Simply dummy text</a></li>
-                        <li><a href="#">The printing and typesetting </a></li>
-                        <li><a href="#">Standard dummy text</a></li>
-                        <li><a href="#">Type specimen book</a></li>
+                        <li><a href="#">Commercial and Industrial Laundry</a></li>
+                        <li><a href="#">Pick-up and Delivery</a></li>
+                        <li><a href="#">Dry Cleaning </a></li>
+                        <li><a href="#">Specialty Items</a></li>
+                        <li><a href="#">Ironing/Pressing</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="single_footer single_footer_address">
-                    <h4>Page Link</h4>
+                    <h4>Opening Hours</h4>
                     <ul>
-                        <li><a href="#">Lorem Ipsum</a></li>
-                        <li><a href="#">Simply dummy text</a></li>
-                        <li><a href="#">The printing and typesetting </a></li>
-                        <li><a href="#">Standard dummy text</a></li>
-                        <li><a href="#">Type specimen book</a></li>
+                        <li><td><i class="far fa-clock"></i>   Monday -Friday</td>
+                                <td>8:00am - 6:00pm</td></li>
+                        <li> <td><i class="far fa-clock"></i>    Saturday</td>
+                                <td>9:00am - 5:30pm</td></li>
+                        <li><td><i class="far fa-clock"></i>     Sunday</td>
+                                <td>9:30am - 12:00pm</td></li>
+                        <li><td><i class="far fa-clock"></i>    Holidays</td>
+                                <td>9:30am - 12:00pm</td></li>
                     </ul>
                 </div>
             </div>
