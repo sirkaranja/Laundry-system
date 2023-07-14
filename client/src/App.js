@@ -12,7 +12,6 @@ function App() {
       < Navbar />
       < About />
       < Services />
-      < Newsletter />
       < Footer />
 
     </div>
