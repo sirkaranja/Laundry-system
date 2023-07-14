@@ -1,6 +1,8 @@
 import React from 'react';
 import img from '../../assets/about_1.jpg';
 import { MdLocalLaundryService } from 'react-icons/md';
+import {GiClothesline} from 'react-icons/gi'
+import {MdOutlineDryCleaning} from 'react-icons/md'
 import passionate from '../../assets/passionate.jpg';
 import "../About/about.css";
 
@@ -32,19 +34,19 @@ const About = () => {
         <img src={passionate} alt="Service" className="service-image" /> 
         <div className="services-cards">
           <div className="service-card">
-          < MdLocalLaundryService size={24}/>  
+         <h3 className='card-titl'>< GiClothesline size={17}/> Gentle Detergent  </h3> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
           <div className="service-card">
-          < MdLocalLaundryService size={24}/> 
+          <h3  className='card-titl'><MdOutlineDryCleaning size={17}/>Fast Dryer </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
           </div>
           <div className="service-card">
-          < MdLocalLaundryService size={24}/> 
+         <h3 className='card-titl'>< MdLocalLaundryService size={17}/> Dry clothes </h3> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
               sed do eiusmod tempor
               incididunt ut labore</p>
