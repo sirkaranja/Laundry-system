@@ -1,35 +1,77 @@
 .about-container {
-    display: flex;
-    align-items: center;
-  }
-  .header{
-    padding-bottom: 700px;
-  }
-  .about-image {
-    width: 800px;
-    height: 700px;
-    padding-bottom: 510px;
-    border-radius: 0 10px;
-   } 
-  
-  .about-text {
-    margin-left: 20px;
-    padding-bottom: 510px; 
-    font-size: 30px;
-  }
-  #about-top{
-    font-family: monospace;
-    font-weight: lighter;
-    font-size: large;
-  }
-  .custom-button{   display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 25px;
-    position: relative;
-    border: solid 2px transparent;
-    gap: 6px;
-    color: #ffffff;
-    background: #08c22e;
-    /* background: linear-gradient(white, white) padding-box, linear-gradient(to right, #08c22e, #03a9f4) border-box; */
-    border-radius: 10px;}
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-bottom: 700px;
+}
+
+.about-image {
+  width: 800px;
+  height: 700px;
+  border-radius: 0 10px;
+}
+
+.services-image {
+  width: 300px;
+  height: 100px;
+}
+
+.about-text {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+#about-top {
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: large;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  position: relative;
+  border: solid 2px transparent;
+  gap: 6px;
+  color: #ffffff;
+  background: #08c22e;
+  border-radius: 10px;
+}
+
+.services-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.services-image {
+  width: 600px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.services-cards {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-left: 300px;
+  /* align-items: flex-start; */
+  /* width: calc(100% - 320px); */
+}
+
+.service-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  flex-basis: calc(33.33% - 40px);
+  box-sizing: border-box;
+  box-shadow: inset;
+}
+
+
