@@ -186,7 +186,7 @@ line-height:40px;
 }
 }
 .social_profile ul li a:hover{
-background:#ff3666;
+background: #08c22e;;
 border: 1px solid #ff3666;
 color:#fff;
 border:0px;
@@ -200,5 +200,5 @@ font-size: 15px;
 border-top: 1px solid rgba(255,255,255,0.4);
 text-align: center;
 }
-.copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+.copyright a{color:#ffffff;transition: all 0.2s ease 0s;}
 .copyright a:hover{color:#ff3666;}
