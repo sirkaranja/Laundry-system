@@ -3,7 +3,7 @@ import React, { useState }  from 'react'
 import "../services/services.css"
 
 import img3 from "../../assets/passionate.jpg"
-import img6 from "../../assets/service.PNG"
+import img6 from "../../assets/service.png"
 import "../About/about.css"
 
 export const Services = () => {
@@ -29,7 +29,7 @@ export const Services = () => {
             </div>
             <div>
       <div>
-      <img src={img6} alt="Your Image" />
+      <img src={img6} alt="Your Image"  style={{width:'1200px', height:'600px', paddingLeft:'150px',}}/>
       </div>
       <div>
         <img src={img3} alt="Your Image" />
