@@ -14,7 +14,6 @@ class Order(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     customer_id = db.Column(db.Integer, db.ForeignKey('customer.id'), nullable=False)
     status = db.Column(db.String(20), nullable=False)  # 'pending', 'processing', 'ready to deliver'
-    # Add other order attributes as needed
 
 class Expense(db.Model):
     id = db.Column(db.Integer, primary_key=True)
