@@ -17,12 +17,12 @@ class Order(db.Model):
 
 class Expense(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    # Add expense-related attributes
+
 
 class Service(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
-    # Add other service attributes as needed
+
 
 class PaymentDetail(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -30,4 +30,4 @@ class PaymentDetail(db.Model):
     is_dryer = db.Column(db.Boolean, default=False)
     extra_care_charge = db.Column(db.Float, default=0.0)
     delivery_charge = db.Column(db.Float, default=0.0)
-    # Add other payment detail attributes as needed
+
