@@ -62,3 +62,18 @@ def generate_payment_details(num_payment_details, orders):
         payment_details.append(payment_detail)
     return payment_details
 
+# Usage example
+if __name__ == "__main__":
+    num_customers = 10
+    num_orders = 20
+    num_expenses = 5
+    num_services = 3
+    num_payment_details = 15
+
+    customers = generate_customers(num_customers)
+    orders = generate_orders(num_orders, customers)
+    expenses = generate_expenses(num_expenses)
+    services = generate_services(num_services)
+    payment_details = generate_payment_details(num_payment_details, orders)
+
+   
