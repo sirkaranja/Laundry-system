@@ -1,7 +1,16 @@
 from faker import Faker
 import random
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from models import db, Customer, Order, Expense, Service, PaymentDetail
+db= SQLAlchemy()
 
+app=Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///jobs.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db.init_app(app)
 fake = Faker()
+
 
 # Generate fake customers
 def generate_customers(num_customers):
