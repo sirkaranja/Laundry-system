@@ -14,6 +14,15 @@ CORS(app)
 def index():
     return "<h3>Dashboard</h3>"
 
+@app.route('/customers', methods=['GET'])
+def get_customers():
+    customers = Customer.query.all()
+    customers_data = [{ 'id': customer.id,'name': customer.name
+        }
+        for customer in customers
+    ]
+    return jsonify(customers_data)
+
 
 
 if __name__ =='__main__':
