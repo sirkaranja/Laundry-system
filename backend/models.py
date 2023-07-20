@@ -6,12 +6,14 @@ class Customer(db.Model):
     __tablename__ = 'customers'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
+    orders = db.relationship('Order', backref='customer', lazy=True)
 
 class Order(db.Model):
     __tablename__ = 'orders'
     id = db.Column(db.Integer, primary_key=True)
     customer_id = db.Column(db.Integer, db.ForeignKey('customers.id'), nullable=False)
-    status = db.Column(db.String(20), nullable=False)  # 'pending', 'processing', 'ready to deliver'
+    status = db.Column(db.String(20), nullable=False)
+    payment_details = db.relationship('PaymentDetail', backref='order', lazy=True)
 
 class Expense(db.Model):
     __tablename__ = 'expenses'
