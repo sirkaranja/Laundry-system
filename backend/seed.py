@@ -3,86 +3,66 @@ import random
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from models import db, Customer, Order, Expense, Service, PaymentDetail
-db= SQLAlchemy()
 
-app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///jobs.db'
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///laundry.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# Initialize the db with the app
 db.init_app(app)
+
 fake = Faker()
+def generate_fake_data(num_customers=100, num_orders=200, num_expenses=50, num_services=10, num_payment_details=300):
+   
 
-
-# Generate fake customers
-def generate_customers(num_customers):
-    customers = []
+    # Generate fake customers
     for _ in range(num_customers):
-        customer = {
-            'name': fake.name(),
-            # Add other customer attributes as needed
-        }
-        customers.append(customer)
-    return customers
+        name = fake.name()
+        customer = Customer(name=name)
+        db.session.add(customer)
 
-# Generate fake orders
-def generate_orders(num_orders, customers):
+    # Generate fake orders
+    customers = Customer.query.all()
     order_statuses = ['pending', 'processing', 'ready to deliver']
-    orders = []
+
     for _ in range(num_orders):
-        order = {
-            'customer_id': random.choice(customers)['id'],
-            'status': random.choice(order_statuses),
-            # Add other order attributes as needed
-        }
-        orders.append(order)
-    return orders
+        customer = random.choice(customers)
+        status = random.choice(order_statuses)
+        order = Order(customer=customer, status=status)
+        db.session.add(order)
 
-# Generate fake expenses
-def generate_expenses(num_expenses):
-    expenses = []
+    # Generate fake expenses
     for _ in range(num_expenses):
-        expense = {
-            # Add expense-related attributes
-        }
-        expenses.append(expense)
-    return expenses
+        # You can add attributes for expenses according to your specific needs
+        expense = Expense()
+        db.session.add(expense)
 
-# Generate fake services
-def generate_services(num_services):
-    services = []
+    # Generate fake services
     for _ in range(num_services):
-        service = {
-            'name': fake.word(),
-            # Add other service attributes as needed
-        }
-        services.append(service)
-    return services
+        name = fake.word()
+        service = Service(name=name)
+        db.session.add(service)
 
-# Generate fake payment details
-def generate_payment_details(num_payment_details, orders):
-    payment_methods = ['ATM', 'MPesa', 'cash']
-    payment_details = []
+    # Generate fake payment details
+    orders = Order.query.all()
+
     for _ in range(num_payment_details):
         order = random.choice(orders)
-        payment_detail = {
-            'order_id': order['id'],
-            'payment_method': random.choice(payment_methods),
-            # Add other payment detail attributes as needed
-        }
-        payment_details.append(payment_detail)
-    return payment_details
+        is_dryer = random.choice([True, False])
+        extra_care_charge = random.uniform(1.0, 10.0)
+        delivery_charge = random.uniform(5.0, 20.0)
+        payment_detail = PaymentDetail(order=order, is_dryer=is_dryer, extra_care_charge=extra_care_charge, delivery_charge=delivery_charge)
+        db.session.add(payment_detail)
+
+    db.session.commit()
+
 
 # Usage example
 if __name__ == "__main__":
-    num_customers = 10
-    num_orders = 20
-    num_expenses = 5
-    num_services = 3
-    num_payment_details = 15
+    with app.app_context():
+        db.create_all()
 
-    customers = generate_customers(num_customers)
-    orders = generate_orders(num_orders, customers)
-    expenses = generate_expenses(num_expenses)
-    services = generate_services(num_services)
-    payment_details = generate_payment_details(num_payment_details, orders)
+    # Generate fake data and populate the database
+    generate_fake_data()
 
-   
+    app.run(debug=True)
