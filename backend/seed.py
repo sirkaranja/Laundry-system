@@ -63,6 +63,6 @@ if __name__ == "__main__":
         db.create_all()
 
     # Generate fake data and populate the database
-    generate_fake_data()
+        generate_fake_data()
 
     app.run(debug=True)
